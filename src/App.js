@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Input from './component/Input/Input';
@@ -26,7 +25,7 @@ function App() {
     setArr(arrDeleted)
   }
   function handleUpdate(id){
-    let updatesk=taskArr.find((e)=>e.id ==id)
+    let updatesk=taskArr.find((e)=>e.id ===id)
     updatesk.isDone=!updatesk.isDone
     setArr([...taskArr])
   }
